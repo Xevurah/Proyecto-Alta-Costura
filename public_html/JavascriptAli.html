@@ -80,8 +80,18 @@ and open the template in the editor.
                                         <img  src="Img/hc11.jpg" class="zoom img-fluid rounded "  alt="">
 
                                     </a>
-                                    <div class="card-body">
-                                        <p class="card-text fonttextos">Muestra de un texto.</p>
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-pink collapsed" style="margin-bottom:3px;" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                Wingardium Leviosa.
+                                            </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -159,6 +169,55 @@ and open the template in the editor.
                                 </div>
                             </div>             
                         </div>
+
+                        <hr>
+                        <!---->
+                        <center><a class="badge badge-secondary" onclick="aparece()" style="cursor:pointer;color:white" ><h1>Aparece el collapse</h1></a></center>
+                        <div class="accordion" id="accordionExample" style="display:none">
+                            <div class="card">
+                                <div class="card-header badge badge-dark" id="headingOne">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-outline-pinky collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            Wingardium Leviosa.
+                                        </button>
+                                    </h2>
+                                </div>
+
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header badge badge-dark" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-outline-pinky collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            Alohomora.
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header badge badge-dark" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-outline-pinky collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            Patronus. 
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <hr>
                     </div>
                     <div class="col-sm-1 ">
@@ -213,7 +272,7 @@ and open the template in the editor.
                                 <div class="card text-center card-shadow">
                                     <div class="card-header fontitulo"><i class="fas fa-file-signature"></i> Contactanos</div>
                                     <div class="card-body text-dark">
-                                        <form class="needs-validation" id="contactanos" novalidate>
+                                        <form class="needs-validation" novalidate>
                                             <div class="form-row">
                                                 <div class="col-md-6 mb-3">
                                                     <label class="fontitulo" for="validationTooltip01"><i class="far fa-address-card"></i> Nombre</label>
@@ -224,7 +283,7 @@ and open the template in the editor.
                                                 </div>
                                                 <div class="col-md-6 mb-3">
                                                     <label class="fontitulo" for="validationTooltip02"><i class="far fa-address-card"></i> Apellido</label>
-                                                    <input type="text" class="form-control fonttextos" id="validationTooltip02" placeholder="Apellido" onkeyup="checaapellido()" required>
+                                                    <input type="text" class="form-control fonttextos" id="validationTooltip02" placeholder="Apellido" required>
                                                     <div class="invalid-feedback fonttextos">
                                                         Por favor escriba un apellido correctamente.
                                                     </div>
@@ -233,13 +292,13 @@ and open the template in the editor.
                                             <div class="form-row">
                                                 <div class="col-md-12 mb-3">
                                                     <label class="fontitulo" for="validationTooltip03"><i class="fas fa-envelope"></i> Email</label>
-                                                    <input type="text" class="form-control fonttextos" id="validationTooltip03" placeholder="Email" onkeyup="validateEmail()" required>
+                                                    <input type="text" class="form-control fonttextos" id="validationTooltip03" placeholder="Email" required>
                                                     <div class="invalid-feedback fonttextos">
                                                         Por favor escriba un email correctamente.
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-primary fontitulo btn-shadow" type="button" onclick="revisaRegistro()" >Enviar</button>
+                                            <button class="btn btn-primary fontitulo btn-shadow" type="button">Enviar</button>
                                         </form>
                                     </div>
                                     <div class="card-footer text-muted">
@@ -325,41 +384,41 @@ and open the template in the editor.
         <script type="text/javascript" src="JAVASCRIPT/bootstrap.js"></script>
         <script>
 
-                                                $(document).ready(function () {
+                                                        $(document).ready(function () {
 
 
 
-                                                    $('.carousel').carousel({
-                                                        interval: 2000
-                                                    });
+                                                            $('.carousel').carousel({
+                                                                interval: 2000
+                                                            });
 
-                                                    $("a.fancybox").hover(function () {
-                                                        $(this).addClass('animated pulse');
-                                                    });
-                                                    $("a.fancybox").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
-                                                        $(this).removeClass('animated pulse');
-                                                    });
+                                                            $("a.fancybox").hover(function () {
+                                                                $(this).addClass('animated pulse');
+                                                            });
+                                                            $("a.fancybox").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
+                                                                $(this).removeClass('animated pulse');
+                                                            });
 
-                                                    $("a.nav-link").hover(function () {
-                                                        $(this).addClass('animated fast pulse');
-                                                    });
-                                                    $("a.nav-link").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
-                                                        $(this).removeClass('animated fast pulse');
-                                                    });
+                                                            $("a.nav-link").hover(function () {
+                                                                $(this).addClass('animated fast pulse');
+                                                            });
+                                                            $("a.nav-link").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
+                                                                $(this).removeClass('animated fast pulse');
+                                                            });
 
-                                                    $("a.nav-link").hover(function () {
-                                                        $(this).addClass('animated fast pulse');
-                                                    });
-                                                    $("a.nav-link").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
-                                                        $(this).removeClass('animated fast pulse');
-                                                    });
+                                                            $("a.nav-link").hover(function () {
+                                                                $(this).addClass('animated fast pulse');
+                                                            });
+                                                            $("a.nav-link").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
+                                                                $(this).removeClass('animated fast pulse');
+                                                            });
 
-                                                    $("a.nav-link").hover(function () {
-                                                        $(this).addClass('animated fast pulse');
-                                                    });
-                                                    $("a.nav-link").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
-                                                        $(this).removeClass('animated fast pulse');
-                                                    });
+                                                            $("a.nav-link").hover(function () {
+                                                                $(this).addClass('animated fast pulse');
+                                                            });
+                                                            $("a.nav-link").bind("animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd", function () {
+                                                                $(this).removeClass('animated fast pulse');
+                                                            });
 
 //                                                            $(window).scroll(function (event) {
 //                                                                var scroll = $(window).scrollTop();
@@ -377,87 +436,43 @@ and open the template in the editor.
 //                                                            $("#navizi").on("blur", function () {
 //                                                                $(this).css('opacity', op);
 //                                                            });
-                                                    $("#loadingPage").fadeOut(1000, function () {
-                                                        $("#loadingPage").css("z-index", "-1000");
-                                                    });
-                                                });
+                                                            $("#loadingPage").fadeOut(1000, function () {
+                                                                $("#loadingPage").css("z-index", "-1000");
+                                                            });
 
 
-                                                function checanombre() {
-                                                    var nombre = $("#validationTooltip01").val();
-                                                    var regex = /^[a-zA-Z ]{2,30}$/;
-                                                    if (regex.test(nombre)) {
-                                                        $("#validationTooltip01").addClass("is-valid");
-                                                        $("#validationTooltip01").removeClass("is-invalid");
-                                                    } else {
-                                                        $("#validationTooltip01").addClass("is-invalid");
-                                                        $("#validationTooltip01").removeClass("is-valid");
-                                                    }
-                                                }
-                                                function checaapellido() {
-                                                    var apellido = $("#validationTooltip02").val();
-                                                    var regex = /^[a-zA-Z ]{2,30}$/;
-                                                    if (regex.test(apellido)) {
-                                                        $("#validationTooltip02").addClass("is-valid");
-                                                        $("#validationTooltip02").removeClass("is-invalid");
-                                                    } else {
-                                                        $("#validationTooltip02").addClass("is-invalid");
-                                                        $("#validationTooltip02").removeClass("is-valid");
-                                                    }
-                                                }
+                                                        });
 
-
-                                                function validateEmail() {
-                                                    var email = $("#validationTooltip03").val();
-                                                    var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                                                    if (regex.test(email)) {
-                                                        $("#validationTooltip03").addClass("is-valid");
-                                                        $("#validationTooltip03").removeClass("is-invalid");
-                                                    } else {
-                                                        $("#validationTooltip03").addClass("is-invalid");
-                                                        $("#validationTooltip03").removeClass("is-valid");
-                                                    }
-                                                }
-
-                                                function revisaRegistro() {
-                                                    var nombre = $("#validationTooltip01").val();
-                                                    var regexnombre = /^[a-zA-Z ]{2,30}$/;
-                                                    var apellido = $("#validationTooltip02").val();
-                                                    var regexapellido = /^[a-zA-Z ]{2,30}$/;
-                                                    var email = $("#validationTooltip03").val();
-                                                    var regexemail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-                                                    if (!regexnombre.test(nombre)) {
-                                                        $("#validationTooltip01").addClass("is-invalid");
-                                                        $("#validationTooltip01").removeClass("is-valid");
-                                                        $("#validationTooltip01").focus();
-                                                    } else if (!regexapellido.test(apellido)) {
-                                                        $("#validationTooltip02").addClass("is-invalid");
-                                                        $("#validationTooltip02").removeClass("is-valid");
-                                                        $("#validationTooltip02").focus();
-                                                    } else if (!regexemail.test(email)) {
-                                                        $("#validationTooltip03").addClass("is-invalid");
-                                                        $("#validationTooltip03").removeClass("is-valid");
-                                                        $("#validationTooltip03").focus();
-                                                    }
-                                                    if (regexnombre.test(nombre)) {
-                                                        if (regexapellido.test(apellido)) {
-                                                            if (regexemail.test(email)) {
-                                                                $("#contactanos").submit();
+                                                        function aparece() {
+                                                            if ($("#accordionExample").css("display") === "none") {
+                                                                $("#accordionExample").show();
+                                                            } else {
+                                                                $("#accordionExample").hide();
                                                             }
                                                         }
-                                                    }
 
-                                                }
 
-                                                function div1() {
-                                                    $("#div1").toggle();
-                                                }
-                                                function div2() {
-                                                    $("#div2").toggle();
-                                                }
-                                                function div3() {
-                                                    $("#div3").toggle();
-                                                }
+                                                        function checanombre() {
+                                                            var nombre = $("#validationTooltip01").val();
+                                                            var regex = /^[a-zA-Z ]{2,30}$/;
+                                                            if (regex.test(nombre)) {
+                                                                $("#validationTooltip01").addClass("is-valid");
+                                                                $("#validationTooltip01").removeClass("is-invalid");
+                                                            } else {
+                                                                $("#validationTooltip01").addClass("is-invalid");
+                                                                $("#validationTooltip01").removeClass("is-valid");
+                                                            }
+                                                        }
+
+                                                        function div1() {
+                                                            $("#div1").toggle();
+                                                        }
+                                                        function div2() {
+                                                            $("#div2").toggle();
+                                                        }
+                                                        function div3() {
+                                                            $("#div3").toggle();
+                                                        }
 
 
 
@@ -465,3 +480,6 @@ and open the template in the editor.
         </script>
     </body>
 </html>
+
+
+
