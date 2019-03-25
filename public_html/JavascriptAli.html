@@ -351,18 +351,18 @@ and open the template in the editor.
                                 <div class="card text-center card-shadow">
                                     <div class="card-header fontitulo"><i class="fas fa-file-signature"></i> Contactanos</div>
                                     <div class="card-body text-dark">
-                                        <form class="needs-validation" novalidate>
+                                        <form class="needs-validation" novalidate action="validation.php" method="POST">
                                             <div class="form-row">
                                                 <div class="col-md-6 mb-3">
                                                     <label class="fontitulo" for="validationTooltip01"><i class="far fa-address-card"></i> Nombre</label>
-                                                    <input type="text" class="form-control fonttextos" id="validationTooltip01" placeholder="Nombre" onkeypress="return runScript(event,'nombre')" onkeyup="checanombre()" required>
+                                                    <input type="text" class="form-control fonttextos" name="nombre" id="validationTooltip01" placeholder="Nombre" onkeypress="return runScript(event,'nombre')" onkeyup="checanombre()" required>
                                                     <div class="invalid-feedback fonttextos">
                                                         Por favor escriba un nombre correctamente.
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 mb-3">
                                                     <label class="fontitulo" for="validationTooltip02"><i class="far fa-address-card"></i> Apellido</label>
-                                                    <input type="text" class="form-control fonttextos" id="validationTooltip02" placeholder="Apellido" onkeypress="return runScript(event,'apellido')" onkeyup="checaapellido()" required>
+                                                    <input type="text" class="form-control fonttextos" name="apellido"  id="validationTooltip02" placeholder="Apellido" onkeypress="return runScript(event,'apellido')" onkeyup="checaapellido()" required>
                                                     <div class="invalid-feedback fonttextos">
                                                         Por favor escriba un apellido correctamente.
                                                     </div>
@@ -371,13 +371,13 @@ and open the template in the editor.
                                             <div class="form-row">
                                                 <div class="col-md-12 mb-3">
                                                     <label class="fontitulo" for="validationTooltip03"><i class="fas fa-envelope"></i> Email</label>
-                                                    <input type="text" class="form-control fonttextos" id="validationTooltip03" placeholder="Email" onkeypress="return runScript(event,'email')" onkeyup="validateEmail()" required>
+                                                    <input type="text" class="form-control fonttextos" name="email" id="validationTooltip03" placeholder="Email" onkeypress="return runScript(event,'email')" onkeyup="validateEmail()" required>
                                                     <div class="invalid-feedback fonttextos">
                                                         Por favor escriba un email correctamente.
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button class="btn btn-primary fontitulo btn-shadow" onclick="revisaRegistro()" id="sendcont" type="button">Enviar</button>
+                                            <button class="btn btn-primary fontitulo btn-shadow" id="sendcont" type="submit">Enviar</button>
                                         </form>
                                     </div>
                                     <div class="card-footer text-muted">
