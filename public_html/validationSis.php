@@ -1,4 +1,4 @@
-<?php 
+<?php
 	class dbConn{
 
 		private $user = '';
@@ -8,7 +8,7 @@
 		private $conn = '';
 
 		public function __construct(){
-			$this -> host = '127.0.0.9';
+			$this -> host = 'localhost';
 			$this -> user = 'root';
 			$this -> pass = '';
 			$this -> db = 'alta_costura';
@@ -22,16 +22,15 @@
 				$this->db
 			)or die ("La conexion a sql fallo");
 		}
-                public function exequery($sql){
-			echo $sql;
+            public function exequery($sql){
 			$this->conn->query($sql);
 		}
-                
-		public function closeconn(){
+
+			public function closeconn(){
 			$this->conn->close();
 		}
 
-		
+
 	}
  ?>
 
